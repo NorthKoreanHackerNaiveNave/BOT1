@@ -150,7 +150,8 @@ public class fun {
                         System.out.println(Ad1[Arr1][Arr2] + Ad2[Arr3][Arr4] + Animail[Na1][Na2]);
                         System.out.println(Country[C4]);
                         BD();
-                        Pass();
+                        RegPass();
+                        RndPass();
                         System.out.println();
                         System.out.println();
                         try {
@@ -175,7 +176,66 @@ public class fun {
 
         }
 
-        static void Pass() {
+        static void RegPass() {
+                String[][] Describ = {
+                                /* 1 */ { "Active", "Adaptable", "Adventurous", "Amusing", "Brave", "Bright", "Calm",
+                                                "Careful", "Charming", "Compassionate" },
+                                /* 2 */ { "Considerate", "Courageous", "Courteous", "Creative", "Determined",
+                                                "Diligent", "Discreet", "Dynamic", "Energetic", "Fearless" },
+                                /* 3 */ { "Friendly", "Funny", "Gentle", "Helpful", "Generous", "Honest", "Humourous",
+                                                "Imaginative", "Intelligent", "Inventive" },
+                                /* 4 */ { "Joyful", "Kind", "Loving", "Loyal", "Lucky", "Mature", "Motivated", "Neat",
+                                                "Nice", "Optimistic" },
+                                /* 5 */ { "Passionate", "Patient", "Polite", "Popular", "Powerful", "Practical",
+                                                "Rational",
+                                                "Realistic", "Reliable", "Resourceful" },
+                                /* 6 */ { "Sensible", "Sincere", "Smart", "Socialable", "Smart", "Fast", "Fat",
+                                                "Cool", "Rotten", "Dirty" },
+                                /* 7 */ { "Upset", "Weary", "Zealous", "Creepy", "Happy", "Lethal", "Pleasant",
+                                                "Hollow", "Naughty", "Nasty" },
+                                /* 8 */ { "Ideal", "Rotten", "Decayed", "Cruel", "Cheerful", "Huge", "Horrific",
+                                                "Jealous", "Jittery", "Shaggy" },
+                                /* 9 */ { "Devious", "Defiant", "Cloudy", "Average", "Disturbed", "Dizzy",
+                                                "Fuzzy", "Funny", "High", "Helpless" },
+                                /* 10 */ { "Petty", "Scary", "Terrible", "Testy", "Tricky", "Poised", "Clumsy",
+                                                "Greasy", "Burly", "Batty" } };
+                String[][] Animail = {
+                                /* 1 */ { "buffalo", "bat", "bull", "pufferfish", "marlin", "penguin", "jay",
+                                                "pigeon",
+                                                "tadpole", "viper" },
+                                /* 2 */ { "tortoise", "toad", "dolphin", "donkey", "elephant", "reindeer",
+                                                "panther",
+                                                "rhino", "lynx", "baboon" },
+                                /* 3 */ { "cheetah", "lion", "panda", "squirrel", "fox", "lemur", "alpaca",
+                                                "dog",
+                                                "dolphin", "gorilla" },
+                                /* 4 */ { "goldfish", "stringray", "swordfish", "piranha", "butterflyfish",
+                                                "kissingfish", "cobia", "lionfish", "clownfish", "eel" },
+                                /* 5 */ { "zebra", "pig", "woodpecker", "hummingbird", "robin", "flamingo",
+                                                "toucan",
+                                                "spoonbill", "bluebird", "cardinal" },
+                                /* 6 */ { "crocodile", "cobra", "frog", "turtle", "snake", "gecko", "lizard",
+                                                "newt", "numbat", "tiger" },
+                                /* 7 */ { "cat", "wolf", "crane", "crow", "dove", "cormorant", "duck",
+                                                "eagle", "hen", "magpie" },
+                                /* 8 */ { "ostrich", "parrot", "peacock", "pelican", "raven", "rooster",
+                                                "seagull",
+                                                "sparrow", "swallow", "turkey" },
+                                /* 9 */ { "vulture", "barracuda", "bass", "bluetang", "bluefish", "catfish",
+                                                "cod",
+                                                "dolphin", "greymullet", "mackerel" },
+                                /* 10 */ { "trout", "snapper", "sockeye", "pike", "marlin", "betta", "cammel",
+                                                "leopard", "monkey", "skunk" } };
+                int Des1 = (int) (Math.random() * 10);
+                int Des2 = (int) (Math.random() * 10);
+                int Ani1 = (int) (Math.random() * 10);
+                int Ani2 = (int) (Math.random() * 10);
+                int Numb11 = (int) (Math.random() * 8);
+                int Numb12 = (int) (Math.random() * 8);
+                System.out.println(Describ[Des1][Des2] + Animail[Ani1][Ani2] + Numb11 + Numb12);
+        };
+
+        static void RndPass() {
                 for (int i = 0; i < 9; i++) {
                         int P1 = (int) (Math.random() * 25);
                         char[] Con = {
